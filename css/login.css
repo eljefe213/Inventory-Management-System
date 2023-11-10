@@ -6,3 +6,9 @@ body{
 div.loginHeader{
     text-align: center;
 }
+
+div.loginHeader h1{
+    font-size: 60px;
+    color: #f685a2;
+
+}
