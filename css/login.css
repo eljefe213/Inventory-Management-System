@@ -3,8 +3,11 @@
 body#loginBody{
     background: url(../images/bg3.jpg) no-repeat center center fixed;
     background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
+    
 } 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 div.loginHeader{
     text-align: center;
@@ -88,12 +91,80 @@ div.header{
 }
 
 div.banner{
-    background: url(../images/bg3.jpg) no-repeat center center fixed;
+    background: url(../images/conteneur2.jpg) no-repeat center center fixed;
     background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 div.homepageContainer{
     width: 100%;
     max-width: 900px;
+    /* height: 70vh; */
     margin: 0 auto;
+}
+
+div.bannerHeader h1{
+    font-size: 100px;
+    color: #f685a2;
+    line-height: 100%;
+}
+
+div.bannerHeader p{
+    font-size: 40px;
+    color: #f685a2;
+    text-transform: uppercase;
+    line-height: 100%;
+    
+}
+
+p.bannerTagLine{
+    margin-top: 20px;
+    font-size: 25px;
+    color: red;
+}
+
+div.bannerIcons {
+    margin-top: 150px;
+}
+
+div.bannerIcons a{
+    font-size: 25px;
+    margin-left: 40px;
+    padding: 7px 15px;
+    background:rgba(0, 0, 0, .5);
+    color: #868485;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+div.bannerIcons a:first-child{
+    margin-left: 0px;
+}
+
+div.bannerIcons a:hover{
+    color: #fff;
+    font-size: 25px;
+    background: #f685a2;
+    transition: .5s all;
+}
+
+div.homepageFeatures{
+    display: flex;
+    flex-direction: row;
+}
+
+div.homepageFeature{
+    padding: 10px 20px;
+}
+
+div.homepageFeature span.featureIcon{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    font-size: 30px;
+    background: #f685a2;
+    color: #fff;
 }
