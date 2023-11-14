@@ -99,8 +99,7 @@ div.banner{
 
 div.homepageContainer{
     width: 100%;
-    max-width: 900px;
-    /* height: 70vh; */
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -181,4 +180,69 @@ div.homepageFeature h3.featureTitle{
 
 div.homepageFeature p.featureDescription{
     color: #848484;
+}
+
+div.homepageNotified{
+    background: #e3e3e3;
+    padding: 50px 0px;
+}
+
+div.homepageNotifiedContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+div.emailForm{
+    width: 40%;
+}
+
+div.video{
+    width: 60%;
+    text-align: center;
+}
+
+div.homepageNotified h3{
+    margin-bottom: 20px;
+}
+
+div.homepageNotified p{
+    color: #848484;
+    line-height: 150%;
+    margin-bottom: 30px;
+}
+
+div.formContainer{
+    width: 80%;
+    position: relative;
+}
+
+div.formContainer input{
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 15px;
+    border: none;
+}
+
+div.formContainer input:focus{
+    outline: none;
+}
+
+div.formContainer button{   
+    position: absolute;
+    right: 0;
+    top:0;
+    height: 100%;
+    font-size: 21px;
+    padding: 0px 10px;
+    cursor: pointer;
+    background: #f685a2;
+    border: none;
+    color: #fff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+iframe{
+    width: 80%;
+    height: 100%;
 }
