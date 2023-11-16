@@ -346,11 +346,77 @@ div.dashboard_sidebar{
 }
 
 div.dashboard_content_container{
-    width: 70%;
+    width: 80%;
+    background: #f4f6f9;
 }
 
 h3.dashboard_logo{
     color: #f685a2;
     font-size: 80px;
     text-align: center;
+}
+
+div.dashboard_sidebar_user{
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff
+}
+
+div.dashboard_sidebar_user img{
+    width: 80px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #f685a2;
+    margin-right: 5px;
+}
+
+div.dashboard_sidebar_user span{
+    top: 20%;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+}
+
+ul.dashboard_menu_lists{
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+ul.dashboard_menu_lists li{
+    padding: 15px 15px;
+    text-transform: uppercase;
+}
+
+ul.dashboard_menu_lists li a{
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    font-size: 20px;
+}
+
+ul.dashboard_menu_lists li.menuActive{
+    background: #f685a2;
+    color: #fff;
+}
+
+ul.dashboard_menu_lists li:hover{
+    background: #f685a2;
+}
+
+div.dashboard_topNav{
+    background: #fff;
+    padding: 20px;
+}
+
+div.dashboard_topNav a{
+    color: #848383;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#logout_btn{
+    float: right;
 }
