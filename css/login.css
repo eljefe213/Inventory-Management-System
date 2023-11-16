@@ -369,6 +369,7 @@ div.dashboard_sidebar_user img{
     border-radius: 50%;
     border: 2px solid #f685a2;
     margin-right: 5px;
+    vertical-align: middle;
 }
 
 div.dashboard_sidebar_user span{
