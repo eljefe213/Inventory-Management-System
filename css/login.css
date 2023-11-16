@@ -397,6 +397,10 @@ ul.dashboard_menu_lists li a{
     font-size: 20px;
 }
 
+ul.dashboard_menu_lists li a i{
+    font-size: 25px;
+}
+
 ul.dashboard_menu_lists li.menuActive{
     background: #f685a2;
     color: #fff;
@@ -417,6 +421,16 @@ div.dashboard_topNav a{
     text-decoration: none;
 }
 
-#logout_btn{
+a#logout_btn{
     float: right;
+}
+
+div.dashboard_content{
+    padding: 50px 10px 10px 10px;
+}
+
+div.dashboard_content_main{
+    background: #fff;
+    min-height: 800px;
+    height: 100%;
 }
