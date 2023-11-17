@@ -18,10 +18,10 @@
             <div class="dashboard_sidebar_menus">
                 <ul class="dashboard_menu_lists">
                     <li class="menuActive">
-                        <a href="" ><i class="fa fa-dashboard menuIcons"></i> Dashboard</a>
+                        <a href="" ><i class="fa fa-dashboard"></i><span class="menuText"> Dashboard</span></a>
                     </li> 
                     <li> 
-                        <a href=""><i class="fa fa-dashboard menuIcons"></i> Dashboard</a>
+                        <a href=""><i class="fa fa-dashboard"></i><span class="menuText"> Dashboard</span></a>
                     </li>
                 </ul>
             </div>
@@ -40,12 +40,40 @@
     </div>
 
 <script>
+    var sidebarIsOpen = true;
     toggle_btn.addEventListener('click' , (event) => {
         event.preventDefault();
-        dashboard_sidebar.style.width = '10%';
-        dashboard_content_container.style.width = '90%';
-        dahsboard_logo.style.fontSize = '60px';
-        userImage.style.fontSize = '60px';
+        if(sidebarIsOpen){
+                
+            dashboard_sidebar.style.width = '10%';
+            dashboard_sidebar.style.transition = '0.3s all'
+            dashboard_content_container.style.width = '90%';
+            dashboard_logo.style.fontSize = '60px';
+            userImage.style.fontSize = '60px';
+
+            menuIcons = document.getElementsByClassName('menuText');
+            for(var i = 0; i < menuIcons.length; i++){
+                menuIcons[i].style.display = 'none';
+            }
+
+            document.getElementsByClassName('dashboard_menu_lists')[0].style.textAlign = 'center';
+            sidebarIsOpen = false;
+        }else{
+            
+            dashboard_sidebar.style.width = '20%';
+            dashboard_content_container.style.width = '80%';
+            dashboard_logo.style.fontSize = '80px';
+            userImage.style.fontSize = '80px';
+
+            menuIcons = document.getElementsByClassName('menuText');
+            for(var i = 0; i < menuIcons.length; i++){
+                menuIcons[i].style.display = 'inline-block';
+            }
+
+            document.getElementsByClassName('dashboard_menu_lists')[0].style.textAlign = 'left';
+            sidebarIsOpen = true;
+        }
+
     });
 </script>
 </body>
