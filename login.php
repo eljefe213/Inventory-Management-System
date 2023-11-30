@@ -1,3 +1,8 @@
+<?php
+    if($_POST){
+        var_dump($_POST);
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,14 +18,14 @@
             <p>Inventory Management System</p>
         </div>
         <div class="loginBody">
-            <form action="">
+            <form action="login.php" method="_POST">
                 <div class="loginInputsContainer">
                     <label for="">Username</label>
-                    <input placeholder="username" type="text" />
+                    <input placeholder="username" name="username" type="text" />
                 </div>
                 <div class="loginInputsContainer">
                     <label for="">Password</label>
-                    <input placeholder="password" type="password" />
+                    <input placeholder="password" name="password" type="password" />
                 </div>
                 <div class="loginButtonContainer">
                     <button class="loginButton">Login</button>
