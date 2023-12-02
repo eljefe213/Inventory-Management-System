@@ -1,9 +1,14 @@
 <?php
+
     if($_POST){
         $username = $_POST["username"];
         $password = $_POST["password"];
+
+        include("connection/connection.php");
     }
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
