@@ -435,3 +435,11 @@ div.dashboard_content_main{
     min-height: 800px;
     height: 100%;
 }
+
+div#errorMessage{
+    background: #fff;
+    text-align: center;
+    color: red;
+    font-size:20px;
+    padding: 11px;
+}
