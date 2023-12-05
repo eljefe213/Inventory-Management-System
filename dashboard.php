@@ -23,40 +23,9 @@
 </head>
 <body>
     <div id="dashboardMainContainer">
-        <div class="dashboard_sidebar" id="dashboard_sidebar">
-            <h3 class="dashboard_logo" id="dashboard_logo">IMS</h3>
-            <div class="dashboard_sidebar_user">
-                <img src="./images/user/selena.png" alt="user image" id="userImage">
-                <span><?= $user['firstname'] . ' ' . $user['lastname'] ?></span>
-            </div>
-            <div class="dashboard_sidebar_menus">
-                <ul class="dashboard_menu_lists">
-                    <li class="menuActive">
-                        <a href="" ><i class="fa fa-dashboard"></i><span class="menuText"> Dashboard</span></a>
-                    </li> 
-                    <li> 
-                        <a href=""><i class="fa-solid fa-bullhorn"></i><span class="menuText"> Campaigns</span></a>
-                    </li>
-                    <li> 
-                        <a href=""><i class="fa-solid fa-dollar-sign"></i><span class="menuText"> Revenue Management</span></a>
-                    </li>
-                    <li> 
-                        <a href=""><i class="fa-solid fa-book"></i><span class="menuText"> Accounts receivable</span></a>
-                    </li>
-                    <li> 
-                        <a href=""><i class="fa-solid fa-gear"></i><span class="menuText"> Configuration</span></a>
-                    </li>
-                    <li> 
-                        <a href=""><i class="fa-solid fa-chart-line"></i><span class="menuText"> Stats</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <?php include('partials/app-sidebar.php') ?>
         <div class="dashboard_content_container" id="dashboard_content_container">
-            <div class="dashboard_topNav">
-                <a href="" id="toggle_btn"><i class="fa fa-navicon"></i></a>  
-                <a href="database/logout.php" id="logout_btn"><i class="fa fa-power-off"></i>Log-out</a>
-            </div>
+            <?php include('partials/app-topnav.php') ?>
             <div class="dashboard_content">
                 <div class="dashboard_content_main">
 
