@@ -443,3 +443,10 @@ div#errorMessage{
     font-size:20px;
     padding: 11px;
 }
+
+form.appForm{
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #cecfd0;
+}
