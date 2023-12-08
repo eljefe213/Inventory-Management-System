@@ -4,7 +4,7 @@
     session_start();
     if (!isset($_SESSION['user'])) header('Location: login.php');
         
-    
+    $_SESSION['table']  = 'users';
     $user =$_SESSION['user'];
     
 
@@ -29,7 +29,7 @@
             <div class="dashboard_content">
                 <div class="dashboard_content_main">
                     <div id="userAddFormContainer">
-                        <form action="" method="POST" class="appForm">
+                        <form action="database/add.php" method="POST" class="appForm">
                             <div class="appFormInputContainer">
                                 <label for="first_name">First Name</label>
                                 <input type="text" class="appFormInput" id="first_name" name="first_name" />
