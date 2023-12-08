@@ -29,7 +29,7 @@
             <div class="dashboard_content">
                 <div class="dashboard_content_main">
                     <div id="userAddFormContainer">
-                        <form action="" class="appForm">
+                        <form action="" method="POST" class="appForm">
                             <div class="appFormInputContainer">
                                 <label for="first_name">First Name</label>
                                 <input type="text" class="appFormInput" id="first_name" name="first_name" />
@@ -46,7 +46,7 @@
                                 <label for="password">Password</label>
                                 <input type="password" class="appFormInput" id="password" name="password" />
                             </div>
-                            <button type="submit"><i class="fa fa-plus"></i> Add User</button>
+                            <button type="submit" class="appBtn"><i class="fa fa-plus"></i> Add User</button>
                         </form>
                     </div>
                 </div>
